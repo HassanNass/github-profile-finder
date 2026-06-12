@@ -44,7 +44,7 @@ function App() {
       {isLoading ? <p className='loading-msg'>Loading...</p>
                  : info.avatar_url && <ProfileCard info={info} />
       }
-      {isError && <p>User not found, please try again</p>}
+      {isError && <p className='error-msg'>User not found, please try again</p>}
     </div>
   )
 }
